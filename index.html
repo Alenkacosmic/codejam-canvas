@@ -12,28 +12,44 @@
     <div class="inner_wrapper">
         <header class="header">
             <div class="header--navbar">
-                <ul class="header--navbar--list" id="first_navbar">
-                    <li class="header--navbar--list--item"><a href="#"></a></li>
-                    <li class="header--navbar--list--item"><a href="#"></a></li>
-                    <li class="header--navbar--list--item"><a href="#"></a></li>
-                </ul>
+                <div class="header--navbar--item"><a href="#"></a></div>
+                <div class="header--navbar--item"><a href="#"></a></div>
+                <div class="header--navbar--item"><a href="#"></a></div>
             </div>
             <div class="header--logo"><h1>CodeJam - Pallete</h1></div>
             <div class="header--menu">
-                <ul>
+                <ul class="header--menu--closed">
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                 </ul>
-                <div class="header--menu--opened">
+                <ul class="header--menu--opened">
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
-                </div>
+                </ul>
             </div>
         </header>
-        <main></main>
-        <footer class="footer"></footer>
+        <main class="main_content">
+            <div class="instrument_type">
+                <ul>
+                    <li>Paint bucket</li>
+                    <li>Choose color</li>
+                    <li>Move</li>
+                    <li>Transform</li>
+                </ul>
+            </div>
+            <div class="instrument_color">
+                <ul>
+                    <li>Current color</li>
+                    <li>Prev color</li>
+                    <li>red</li>
+                    <li>blue</li>
+                </ul>
+            </div>
+            <div class="canvas"><canvas id="switcher">Your browser doesn't support canvas</canvas></div>
+            <div class="image_changer"></div>
+        </main>
     </div>
     <script src="./script.js"></script>
 </body>
