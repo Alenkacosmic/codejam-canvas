@@ -185,8 +185,6 @@
 }
 
 .canvas {
-  height: 512px;
-  width: 512px;
   position: absolute;
   margin-top: 127px;
   margin-left: 520px;
