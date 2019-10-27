@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>PISKEL-clone</title>
+</head>
+<body class="full_wrapper">
+    <div class="inner_wrapper">
+        <header class="header">
+            <div class="header--navbar">
+                <div class="header--navbar--item"><a href="#"></a></div>
+                <div class="header--navbar--item"><a href="#"></a></div>
+                <div class="header--navbar--item"><a href="#"></a></div>
+            </div>
+            <div class="header--logo"><h1>CodeJam - Pallete</h1></div>
+            <div class="header--menu">
+                <ul class="header--menu--closed">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="header--menu--opened">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="main_content">
+            <div class="instrument_type">
+                <ul>
+                    <li class="bucket"><a href="#">Paint bucket</a></li>
+                    <li class="choose"><a href="#">Choose color</a></li>
+                    <li class="move"><a href="#">Move</a></li>
+                    <li class="transform"><a href="#">Transform</a></li>
+                </ul>
+            </div>
+            <div class="instrument_color">
+                <ul>
+                    <li class="current"><a href="#">Current color</a></li>
+                    <li class="prev"><a href="#">Prev color</a></li>
+                    <li class="red"><a href="#">red</a></li>
+                    <li class="blue"><a href="#">blue</a></li>
+                </ul>
+            </div>
+            <div class="canvas">
+                <canvas id="switcher">Your browser doesn't support canvas</canvas>
+            </div>
+            <div class="image_changer">
+                <ul>
+                    <li id="canv_small" class="small"><a href="#switcher">4X4 pic</a></li>
+                    <li id="canv_medium" class="medium"><a href="#switcher">32X32 pic</a></li>
+                    <li id="canv_icon" class="icon"><a href="#switcher">RSS logo</a></li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
