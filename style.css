@@ -83,6 +83,7 @@
   position: relative;
 }
 .main_content li {
+  height: 48px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -90,7 +91,59 @@
   line-height: 24px;
   display: flex;
   align-items: center;
+}
+.main_content li a {
+  text-decoration: none;
   color: rgba(0, 0, 0, 0.541327);
+}
+.main_content li:before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+}
+.main_content .bucket:before {
+  content: "";
+  background-image: url(./assets/images/bucket-icon.svg);
+}
+.main_content .choose:before {
+  content: "";
+  background-image: url(./assets/images/choose-icon.svg);
+}
+.main_content .move:before {
+  content: "";
+  background-image: url(./assets/images/move-icon.svg);
+}
+.main_content .transform:before {
+  content: "";
+  background-image: url(./assets/images/transform-icon.svg);
+}
+.main_content .current:before {
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #020202;
+  background-color: #868585;
+}
+.main_content .prev:before {
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #020202;
+  background-color: #95eb5d;
+}
+.main_content .red:before {
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #020202;
+  background-color: #eb1e1e;
+}
+.main_content .blue:before {
+  content: "";
+  border-radius: 50%;
+  border: 1px solid #020202;
+  background-color: #38c4dd;
 }
 
 .instrument_type {
@@ -115,6 +168,18 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
 }
 
+.image_changer {
+  display: block;
+  position: absolute;
+  height: 185px;
+  width: 228px;
+  margin-top: 127px;
+  margin-right: 29px;
+  margin-left: 1183px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
 #switcher {
   background-color: gray;
 }
@@ -123,7 +188,7 @@
   height: 512px;
   width: 512px;
   position: absolute;
-  margin-top: 121px;
+  margin-top: 127px;
   margin-left: 520px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
